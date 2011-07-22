@@ -1,0 +1,17 @@
+{
+  "name": "shut up! extension by ersan bilik",
+  "version": "1.0.0",
+  "description": "avoid trolls who likes to CAPSialize their comments",  
+  
+  "icons": {
+    "48" : "troll-48.png",
+    "128" : "troll-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],	  
+      "js" : ["jquery.js","lower.js"],
+	  "all_frames": true
+    }
+  ]
+}
